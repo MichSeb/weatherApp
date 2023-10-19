@@ -8,7 +8,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   color: white;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 700;
@@ -16,23 +16,30 @@ body {
   flex-direction: column;
   align-items: center;
 }
+/* Title */
 #title {
   text-align: center;
   margin-top: 40px;
-  margin-bottom: 80px;
+  color: rgb(135, 170, 250);
 }
+/* Search section */
 #search-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  min-width: 300px;
+  margin-left: 10vw;
+  margin-right: 10vw;
   height: 220px;
+}
+#search-box h2 {
+  color: rgb(227, 164, 164);
 }
 #search-box input {
   background: none;
   border: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgb(227, 164, 164);
   padding: 5px;
   width: 200px;
   transition: width 0.5s;
@@ -48,10 +55,10 @@ body {
 #search-box button {
   border: none;
   background: none;
-  color: white;
+  color: rgb(227, 164, 164);
   font-weight: 700;
   font-size: 1rem;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid rgb(227, 164, 164);
   margin: 20px;
   padding: 10px;
   cursor: pointer;
@@ -62,4 +69,141 @@ body {
 #search-box button:hover {
   width: 140px;
   font-size: 20px;
+}
+/* 3 day forecast div */
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
+img {
+  padding: 4px;
+  margin: 4px;
+}
+#three-days-forecast {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin-bottom: 40px;
+}
+#city-name {
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+#today,
+#tommorow,
+#after-tommorow {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sun-moon_min-max {
+  display: flex;
+  margin-bottom: 10px;
+}
+.sun-moon {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sun {
+  display: flex;
+  align-items: center;
+}
+.sun p {
+  margin-right: 5px;
+}
+.moon {
+  display: flex;
+  align-items: center;
+}
+.moon p {
+  margin-right: 5px;
+}
+.min-max {
+  display: flex;
+  border-right: 1px solid white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+}
+.wheater-icon {
+  width: 100px;
+}
+.main-weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+}
+.main-weather_left-side {
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+}
+.main-weather_right-side {
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.temp-now {
+  font-size: 50px;
+}
+.feels-like-today {
+  font-weight: 300;
+  font-size: 14px;
+}
+.weather-option-today {
+  font-size: 18px;
+}
+.wind-pressure_humidity-rain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.wind-pressure {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+}
+.humidity-rain {
+  padding-left: 10px;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+}
+.wind-pressure_humidity-rain_tommorow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.option-tommorow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.option-tommorow img {
+  width: 40px;
+}
+/* Hourly */
+#hourly-weather {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  border: 1px solid white;
 }

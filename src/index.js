@@ -1,9 +1,11 @@
 // import './style.css';
 const cityInput = document.getElementById('city');
 const searchButton = document.getElementById('submit');
+const cityName = document.getElementById('city-name');
 
 let city = '';
 
+//Change pl letters to eng only - needed for API search
 function changePlToEng(tekst) {
   const zamiany = {
     ą: 'a',
@@ -39,6 +41,7 @@ async function getWeatherData(city) {
 
 searchButton.addEventListener('click', () => {
   city = changePlToEng(cityInput.value);
+  cityName.textContent = cityInput.value;
   getWeatherData(city).then((data) => {
     console.log(data);
   });
