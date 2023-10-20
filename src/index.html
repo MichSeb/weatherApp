@@ -21,43 +21,48 @@
         <div class="sun-moon_min-max">
           <div class="min-max">
             <div class="min">
-              <p>Temp. min.:-°C</p>
+              <p id="temp-min-today">Temp. min.:-°C</p>
             </div>
             <div class="max">
-              <p>Temp. max.:-°C</p>
+              <p id="temp-max-today">Temp. max.:-°C</p>
             </div>
           </div>
           <div class="sun-moon">
             <div class="sun">
               <img src="./sun.svg" alt="sun" width="30px" />
-              <p>--:--</p>
-              <p>--:--</p>
+              <p id="sunrise-today">--:--</p>
+              <p id="sunset-today">--:--</p>
             </div>
             <div class="moon">
               <img src="./moon.svg" alt="sun" width="30px" />
-              <p>--:--</p>
-              <p>--:--</p>
+              <p id="moonrise-today">--:--</p>
+              <p id="moonset-today">--:--</p>
             </div>
           </div>
         </div>
         <div class="main-weather">
           <div class="main-weather_left-side">
-            <img src="./sun.svg" alt="sun" class="wheater-icon" />
+            <img
+              id="weather-icon-today"
+              src="./sun.svg"
+              alt="sun"
+              class="wheater-icon"
+            />
           </div>
           <div class="main-weather_right-side">
-            <p class="temp-now">10°C</p>
-            <p class="feels-like-today">Feels like 8°C</p>
-            <p class="weather-option-today">Sunny</p>
+            <p id="temp-now-today" class="temp-now">10°C</p>
+            <p id="temp-feels-today" class="feels-like-today">Feels like 8°C</p>
+            <p id="weather-option-today" class="weather-option-today">Sunny</p>
           </div>
         </div>
         <div class="wind-pressure_humidity-rain">
           <div class="wind-pressure">
-            <p id="today-wind">Wind: 10 km/h</p>
-            <p id="today-pressure">Pressure: 1000 hPa</p>
+            <p id="today-wind" class="wind-today">Wind: 10 km/h</p>
+            <p id="today-pressure" class="pressure-today">Pressure: 1000 hPa</p>
           </div>
           <div class="humidity-rain">
-            <p id="today-humidity">Humidity: 70%</p>
-            <p id="today-rain">Rain chance: 95%</p>
+            <p id="today-humidity" class="humidity-today">Humidity: 70%</p>
+            <p id="today-rain" class="rain-today">Rain chance: 95%</p>
           </div>
         </div>
       </div>
@@ -66,37 +71,43 @@
         <div class="sun-moon_min-max">
           <div class="min-max">
             <div class="min">
-              <p>Temp. min.:-°C</p>
+              <p id="temp-min-tommorow">Temp. min.:-°C</p>
             </div>
             <div class="max">
-              <p>Temp. max.:-°C</p>
+              <p id="temp-max-tommorow">Temp. max.:-°C</p>
             </div>
           </div>
           <div class="sun-moon">
             <div class="sun">
               <img src="./sun.svg" alt="sun" width="30px" />
-              <p>--:--</p>
-              <p>--:--</p>
+              <p id="sunrise-tommorow">--:--</p>
+              <p id="sunset-tommorow">--:--</p>
             </div>
             <div class="moon">
               <img src="./moon.svg" alt="sun" width="30px" />
-              <p>--:--</p>
-              <p>--:--</p>
+              <p id="moonrise-tommorow">--:--</p>
+              <p id="moonset-tommorow">--:--</p>
             </div>
           </div>
         </div>
         <div class="wind-pressure_humidity-rain_tommorow">
           <div class="option-tommorow">
-            <img src="./sun.svg" alt="sun" class="wheater-icon" />
-            <p class="weather-option-today">Sunny</p>
+            <img
+              id="weather-icon-tommorow"
+              src="./sun.svg"
+              alt="sun"
+              class="wheater-icon"
+            />
+            <p id="weather-option-tommorow" class="weather-option-today">
+              Sunny
+            </p>
           </div>
           <div class="wind-pressure">
-            <p id="today-wind">Wind: 10 km/h</p>
-            <p id="today-pressure">Pressure: 1000 hPa</p>
+            <p class="wind-tommorow" id="today-wind">Wind: 10 km/h</p>
           </div>
           <div class="humidity-rain">
-            <p id="today-humidity">Humidity: 70%</p>
-            <p id="today-rain">Rain chance: 95%</p>
+            <p class="humidity-tommorow" id="today-humidity">Humidity: 70%</p>
+            <p class="rain-tommorow" id="today-rain">Rain chance: 95%</p>
           </div>
         </div>
       </div>
@@ -105,44 +116,45 @@
         <div class="sun-moon_min-max">
           <div class="min-max">
             <div class="min">
-              <p>Temp. min.:-°C</p>
+              <p id="temp-min-after">Temp. min.:-°C</p>
             </div>
             <div class="max">
-              <p>Temp. max.:-°C</p>
+              <p id="temp-max-after">Temp. max.:-°C</p>
             </div>
           </div>
           <div class="sun-moon">
             <div class="sun">
               <img src="./sun.svg" alt="sun" width="30px" />
-              <p>--:--</p>
-              <p>--:--</p>
+              <p id="sunrise-after">--:--</p>
+              <p id="sunset-after">--:--</p>
             </div>
             <div class="moon">
               <img src="./moon.svg" alt="sun" width="30px" />
-              <p>--:--</p>
-              <p>--:--</p>
+              <p id="moonrise-after">--:--</p>
+              <p id="moonset-after">--:--</p>
             </div>
           </div>
         </div>
         <div class="wind-pressure_humidity-rain_tommorow">
           <div class="option-tommorow">
-            <img src="./sun.svg" alt="sun" class="wheater-icon" />
-            <p class="weather-option-today">Sunny</p>
+            <img
+              id="weather-icon-after"
+              src="./sun.svg"
+              alt="sun"
+              class="wheater-icon"
+            />
+            <p id="weather-option-after" class="weather-option-today">Sunny</p>
           </div>
           <div class="wind-pressure">
-            <p id="today-wind">Wind: 10 km/h</p>
-            <p id="today-pressure">Pressure: 1000 hPa</p>
+            <p class="wind-after" id="today-wind">Wind: 10 km/h</p>
           </div>
           <div class="humidity-rain">
-            <p id="today-humidity">Humidity: 70%</p>
-            <p id="today-rain">Rain chance: 95%</p>
+            <p class="humidity-after" id="today-humidity">Humidity: 70%</p>
+            <p class="rain-after" id="today-rain">Rain chance: 95%</p>
           </div>
         </div>
       </div>
     </div>
-    <!-- <div id="hourly-weather">
-      <h4>Hourly Weather</h4>
-    </div> -->
     <script src="index.js"></script>
   </body>
 </html>
